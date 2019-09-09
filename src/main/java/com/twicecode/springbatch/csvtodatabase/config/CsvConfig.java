@@ -22,12 +22,12 @@ import org.springframework.core.io.ClassPathResource;
 
 @EnableBatchProcessing
 @Configuration
-public class CSVConfig {
+public class CsvConfig {
 
     private final JobBuilderFactory jobBuilderFactory;
     private final StepBuilderFactory stepBuilderFactory;
 
-    public CSVConfig(StepBuilderFactory stepBuilderFactory, JobBuilderFactory jobBuilderFactory) {
+    public CsvConfig(StepBuilderFactory stepBuilderFactory, JobBuilderFactory jobBuilderFactory) {
         this.stepBuilderFactory = stepBuilderFactory;
         this.jobBuilderFactory = jobBuilderFactory;
     }
